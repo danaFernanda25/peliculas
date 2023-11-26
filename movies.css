@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: antiquewhite;
+    margin: 90px 40px ;
+}
+
+#categorias {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#contenedor-peliculas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pelicula {
+    margin: 15px;
+    cursor: pointer;
+}
+
+.pelicula img {
+    width: 280px;
+    height: 380px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+  }
+
+.pelicula p{
+    width: 250px;
+    overflow-wrap: break-word;
+    margin-top: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.botones {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: monospace;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+.botones:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+  
+#boton-retroceso {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    font-family: monospace;
+    cursor: pointer;
+    color: white; 
+    background-color: #e74c3c; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+#boton-retroceso:hover {
+    background-color: red;
+}
+  
+#detalles-pelicula {
+    margin: 10px 10px;
+}
+
+#detalles-pelicula h2{
+    margin-bottom: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#detalles-pelicula p{
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

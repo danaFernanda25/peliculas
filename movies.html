@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/movies.css">
+    <title>Explorador de Películas</title>
+</head>
+<body>
+    <div id="categorias">
+        <button class="botones" onclick="mostrarPeliculas('accion')">Acción</button>
+        <button class="botones" onclick="mostrarPeliculas('terror')">Terror</button>
+        <button class="botones" onclick="mostrarPeliculas('aventura')">Aventura</button>
+    </div>
+
+    <div id="contenedor-peliculas"></div>
+
+    <div id="detalles-pelicula"></div>
+
+    <button id="boton-retroceso" onclick="mostrarTodasLasPeliculas()" style="display: none;">Regresar</button>
+
+    <script src="js/movies.js"></script>
+</body>
+</html>
+
